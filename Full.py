@@ -74,18 +74,13 @@ def main_win():
         canvas1.pack(fill = "both", expand = True) 
 
     
-    # name_project = tk.Label(window, text = "Навигация по проекту ", font = ("Arial Bold", 15), fg = "white", bg = "black")
     canvas1.create_text( 360, 50, text = "Навигация по проекту", font = ("Purisa", 20))
-    # name_project.place(x = 220, y = 210)
     
     start_bt = tk.Button(window, text = "Начало работы",command = lambda: new_window(window), width = '40', height = "2", fg = "black", bg = "white")
     start_bt.place(x = 220, y = 110)
     
     start_bt = tk.Button(window, text = "Смена картинки",command = lambda: choice_image(window),  fg = "black", bg = "white", font='Arial 10')
     start_bt.place(x = 20, y = 300)
-    
-    # start_bt = tk.Button(window, text = "Начало работы",command = new_window, width = '10', height = "2", fg = "black", bg = "white")
-    # start_bt.place(x = 320, y = 15)
     
     window.mainloop()
 if "__main__" == __name__:
